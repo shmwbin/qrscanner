@@ -1,8 +1,8 @@
 {
   "name": "SHM QR Scanner",
   "short_name": "SHM QR",
-  "start_url": "/AppStore/qrscanner/index.html",
-  "scope": "/AppStore/qrscanner/",
+  "start_url": "index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0b1329",
   "theme_color": "#0b1329",
