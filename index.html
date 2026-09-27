@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>SHM QR Scanner</title>
-  <!-- সাব-ফোল্ডার পাথ অনুযায়ী সঠিক লিংক -->
-  <link rel="manifest" href="/AppStore/qrscanner/manifest.json">
+  <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#0b1329">
   <!-- HTML5-QRCode Library -->
   <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
@@ -443,9 +442,8 @@
   </div>
 
   <script>
-    // সাব-ফোল্ডারের পাথ অনুযায়ী সার্ভিস ওয়ার্কার রেজিস্টার করা
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/AppStore/qrscanner/sw.js');
+      navigator.serviceWorker.register('sw.js');
     }
 
     let deferredPrompt;
@@ -658,7 +656,7 @@
 
     function scanFromFile(input) {
       if (!input.files || input.files.length === 0) return;
-      var imageFile = input.files0;
+      var imageFile = input.files[0]; // ঠিক করা হয়েছে
 
       if (!html5QrScanner) {
         html5QrScanner = new Html5Qrcode("reader");
