@@ -1,0 +1,17 @@
+{
+  "name": "SHM QR Scanner",
+  "short_name": "SHM QR",
+  "start_url": "/AppStore/qrscanner/index.html",
+  "scope": "/AppStore/qrscanner/",
+  "display": "standalone",
+  "background_color": "#0b1329",
+  "theme_color": "#0b1329",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/ewu5hckc/image/upload/v1790513584/qrscan.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
